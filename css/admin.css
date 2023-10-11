@@ -22,15 +22,16 @@
     list-style-type: none;
 }
 
-.menu ul li {
+
+/* .menu ul li {
     display: inline;
     padding: 1%;
-}
+} */
 
 
 /* css footer */
 
 .footer {
-    background-color: rgb(83, 14, 14);
-    color: antiquewhite;
+    background-color: rgb(14, 9, 9);
+    color: rgb(240, 230, 217);
 }
