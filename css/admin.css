@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    border: 1px solid black;
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* css menu */
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+
+/* css footer */
+
+.footer {
+    background-color: aqua;
+    color: antiquewhite;
+}
