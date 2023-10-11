@@ -24,12 +24,13 @@
 
 .menu ul li {
     display: inline;
+    padding: 1%;
 }
 
 
 /* css footer */
 
 .footer {
-    background-color: aqua;
+    background-color: rgb(83, 14, 14);
     color: antiquewhite;
 }
