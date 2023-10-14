@@ -1,41 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>FOOD ORDER -HOME</title>
-      <link rel="stylesheet" href="../css/admin.css">
-      
-</head>
-<body>
-      
-      <div class="menu">
-            <div class="wrapper">
-                  <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Admin</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Food</a></li>
-                        <li><a href="#">Order</a></li>
-                  </ul>
-                 
-            </div>
-            
+<!-- เรียกไฟล์์php -->
+<?php include('partials/menu.php')?>
 
-      </div>
-      
+      <!-- main-content -->
+            
       <div class="main-content">
             <div class="wrapper">
-                  mid
+                  <h1>DASHBORD</h1>
+                  <div class="col-4 text-center" >
+                              <h1>5</h1> <br>
+                              Categories
+                  </div>
+
+                  <div class="col-4 text-center" >
+                              <h1>5</h1> <br>
+                              Categories
+                  </div>
+
+                  <div class="col-4 text-center" >
+                              <h1>5</h1> <br>
+                              Categories
+                  </div>
+
+                  <div class="col-4 text-center" >
+                              <h1>5</h1> <br>
+                              Categories
+                  </div>
+
+                  <div class="clearfix"></div>
             </div>
-    
+
       </div>
-      <div class="footer">
-            <div class="wrapper">
-                  <p class="text-center">foot food order- <a href="#">team</a>
-            </p>  
-            </div>
-            
-      </div>
-</body>
-</html>
+      <!-- main-content end -->
+
+
+<?php include('partials/footer.php')?>
