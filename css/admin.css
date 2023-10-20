@@ -21,6 +21,23 @@
 }
 
 
+/* tb Manage admin */
+
+.tbl-full {
+    width: 100%;
+}
+
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td {
+    padding: 1%;
+}
+
+
 /* css menu */
 
 
