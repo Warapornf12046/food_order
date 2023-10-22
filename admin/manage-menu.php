@@ -5,11 +5,11 @@
             
       <div class="main-content">
             <div class="wrapper">
-                  <h1>MANAGE  FOOD</h1>
-                   <br><br>
+                  <h1>MANAGE Menu</h1>
+                  <br><br>
 
                   <!-- button to add admin -->
-                  <a href="#" class="btn-primary">Add Food</a><br><br><br>
+                  <a href="#" class="btn-primary">Add Menu</a><br><br><br>
                   
                   <table class="tbl-full">
                         <tr>
@@ -56,7 +56,6 @@
                         </tr>
 
                   </table>
-                  
                   
             </div>
 

@@ -27,6 +27,13 @@
     width: 100%;
 }
 
+
+/* add-adminn */
+
+.tbl-int {
+    width: 100%;
+}
+
 table tr th {
     border-bottom: 1px solid black;
     padding: 1%;
@@ -35,6 +42,74 @@ table tr th {
 
 table tr td {
     padding: 1%;
+}
+
+
+/* ปุ่ม ที่admin*/
+
+.btn-primary {
+    background-color: rgb(204, 184, 223);
+    padding: 1%;
+    color: aliceblue;
+    text-decoration: none;
+    /*ลบเส้นที่ขีดข้อวาม*/
+    font-weight: bold;
+}
+
+
+/* วางที่ปุ่มแล้วเเปลี่ยนสี */
+
+.btn-primary:hover {
+    background-color: blanchedalmond;
+}
+
+
+/* ปุ่ม Update Admin*/
+
+.btn-second {
+    background-color: rgb(96, 189, 113);
+    padding: 1%;
+    color: aliceblue;
+    text-decoration: none;
+    /*ลบเส้นที่ขีดข้อวาม*/
+    font-weight: bold;
+}
+
+
+/* วางที่ปุ่มแล้วเเปลี่ยนสี */
+
+.btn-second:hover {
+    background-color: blanchedalmond;
+}
+
+
+/* ปุ่ม Delete*/
+
+.btn-delete {
+    background-color: rgb(246, 113, 89);
+    padding: 1%;
+    color: aliceblue;
+    text-decoration: none;
+    /*ลบเส้นที่ขีดข้อวาม*/
+    font-weight: bold;
+}
+
+
+/* วางที่ปุ่มแล้วเเปลี่ยนสี */
+
+.btn-delete:hover {
+    background-color: blanchedalmond;
+}
+
+
+/* แสดงข้อความตอนเพพิ่ม ลบ admin */
+
+.success {
+    color: burlywood;
+}
+
+.error {
+    color: coral;
 }
 
 
@@ -91,6 +166,16 @@ table tr td {
 /* css footer */
 
 .footer {
-    background-color: rgb(14, 9, 9);
+    background-color: rgb(244, 8, 8);
     color: rgb(240, 230, 217);
+}
+
+
+/* login */
+
+.login {
+    border: 1px solid gray;
+    width: 20%;
+    margin: 10% auto;
+    padding: 2%;
 }
