@@ -45,11 +45,6 @@
                               unset($_SESSION['change-pwd']);
                         }
 
-                        
-                  
-
-
-
                   ?><br><br>
 
                   <!-- button to add admin -->

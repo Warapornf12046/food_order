@@ -27,6 +27,7 @@
                   }
             
             ?> <br>
+            
       <!-- start form -->
             <form action="" method="POST" class="text-center">
                   USERNAME: <br>
@@ -78,7 +79,5 @@ if(isset($_POST['submit']))
       }
 
 }
-
-
 
 ?>
