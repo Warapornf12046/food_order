@@ -13,7 +13,7 @@
                 //echo "Getting the Data";
                 $id = $_GET['id'];
                 //Create SQL Query to get all other details
-                $sql = "SELECT * FROM tbl_category WHERE id=$id";
+                $sql = "SELECT * FROM menu WHERE id=$id";
 
                 //Execute the Query
                 $res = mysqli_query($conn, $sql);
@@ -194,7 +194,7 @@
                 }
                 
                 //3. Update the Database
-                $sq12 = "UPDATE tbl_category SET
+                $sq12 = "UPDATE menu SET
                     title = '$title',
                     image_name ='$image_name',
                     featured = '$featured',

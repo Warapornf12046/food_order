@@ -8,9 +8,9 @@
 
       <?php 
             //1. get ID of select Admin
-            $id = $_GET['AdminID'];
+            $id = $_GET['id'];
             //2.สร้าsqlรับข้อมูล
-            $sql = "SELECT * FROM admin WHERE AdminID = $id";
+            $sql = "SELECT * FROM admin WHERE id =$id";
 
             $res = mysqli_query($conn, $sql);
 
@@ -23,7 +23,7 @@
                         $row=mysqli_fetch_assoc($res);
 
                         $full_name=$row['full_name'];
-                        $username = $row['Username'];
+                        $username = $row['username'];
                         
 
                   }
@@ -45,13 +45,13 @@
                 <tr>
                     <td>Username:</td>
                     <td>
-                        <input type="text" name="Username" placeholder="Your Username" value="<?php  echo $username; ?>">
+                        <input type="text" name="username" placeholder="Your Username" value="<?php  echo $username; ?>">
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="2">
-                        <input type="hidden" name="AdminID" value="<?php  echo $id; ?>">
+                        <input type="hidden" name="id" value="<?php  echo $id; ?>">
                         <input type="submit" name="submit" value="Update Admin" class="btn-second">
                     </td>
                 </tr>
@@ -66,24 +66,21 @@
 
 </div>
 
-
-<?php include('partials/footer.php')?>
-
 <?php 
       //actionตอนคลิกปุ่มส่ง
 
       if(isset($_POST['submit']))
       {
             //echo "button clicked";
-            $id =$_POST['AdminID']; //name
+            $id =$_POST['id']; //name
             $full_name = $_POST['full_name'];
-            $username = $_POST['Username'];
+            $username = $_POST['username'];
 
             
             $sql = "UPDATE admin SET 
                   full_name = '$full_name',
-                  Username = '$username'
-                  WHERE AdminID='$id'
+                  username = '$username'
+                  WHERE id='$id'
             ";
 
             $res =mysqli_query($conn, $sql);
@@ -109,3 +106,6 @@
 
 
 ?>
+<?php include('partials/footer.php')?>
+
+

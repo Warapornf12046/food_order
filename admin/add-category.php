@@ -23,7 +23,7 @@
         <!-- Add Category Form Starts-->
         <from action = "" method= "POST" entype="multipart/form-data">
         
-            <table class = "thl-30" >
+            <table class = "thl-int" > <!--thl-30 -->
                 <tr>
                     <td>Title</td>
                     <td>
@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="Add Category" class="btn-secondary">
+                        <input type="submit" name="submit" value="Add Category" class="btn-second"><!--btn-secondary-->
                     </td>
                 </tr>
             </table>
@@ -137,7 +137,7 @@
                     $image_name="";
                 }
                 //2. Create SQL Query to Insent Category into Database
-                $sql = "INSERT INTO tbl_category SET
+                $sql = "INSERT INTO menu SET
                     title = '$title',
                     image_name='$image_name',
                     featured = '$featured',
@@ -147,7 +147,7 @@
                 ";
 
                 //3.eXCUTE THE qUERY AND sAVE IN dATABASE
-                $res = mysql_query($conn,$sql);
+                $res =mysqli_query($conn, $sql);
 
                 //4.check whether the query executed or not and data added or not
                 if($res==true)

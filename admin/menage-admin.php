@@ -22,22 +22,22 @@
 
                         if(isset($_SESSION['update']))
                         {
-                              echo $_SESSION['update']; //display session message
-                              unset($_SESSION['update']); //remove sessoin message
+                              echo $_SESSION['update']; 
+                              unset($_SESSION['update']); 
                         }
 
 
                         if(isset($_SESSION['user-not-found']))
                         {
-                              echo $_SESSION['user-not-found']; //display session message
-                              unset($_SESSION['user-not-found']); //remove sessoin message
+                              echo $_SESSION['user-not-found']; 
+                              unset($_SESSION['user-not-found']); 
                         }
 
                         
                         if(isset($_SESSION['pdw-not-match']))
                         {
-                              echo $_SESSION['pdw-not-match']; //display session message
-                              unset($_SESSION['pdw-not-match']); //remove sessoin message
+                              echo $_SESSION['pdw-not-match']; 
+                              unset($_SESSION['pdw-not-match']); 
                         }
 
                         if(isset($_SESSION['change-pwd'])) {
@@ -81,9 +81,9 @@
                                           //using while loop get al the dat from DB
 
                                           //get individaul data
-                                          $id =$rows['AdminID'];
+                                          $id =$rows['id'];
                                           $full_name =$rows['full_name'];
-                                          $username =$rows['Username'];
+                                          $username =$rows['username'];
                                           
 
                                           //display value
@@ -94,9 +94,9 @@
                                                 <td> <?php echo $full_name;?></td>
                                                  <td><?php echo $username; ?></td>  
                                                  <td>
-                                                      <a href="<?php echo SITEURL; ?>admin/change-pass.php?AdminID=<?php echo $id;?>" class="btn-primary">Change Password </a>
-                                                      <a href="<?php echo SITEURL; ?>admin/update-admin.php?AdminID=<?php echo $id;?>" class="btn-second">Update Admin </a>
-                                                      <a href="<?php echo SITEURL; ?>admin/delete-admin.php?AdminID=<?php echo $id;?>" class="btn-delete">Delete Admin</a>
+                                                      <a href="<?php echo SITEURL; ?>admin/change-pass.php?id=<?php echo $id;?>" class="btn-primary">Change Password </a>
+                                                      <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id;?>" class="btn-second">Update Admin </a>
+                                                      <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id;?>" class="btn-delete">Delete Admin</a>
                                     
                                     
                                                 </td>

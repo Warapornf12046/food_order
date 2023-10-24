@@ -27,8 +27,8 @@
                   }
             
             ?> <br>
-            
-      <!-- start form -->
+                  <!-- start form -->
+
             <form action="" method="POST" class="text-center">
                   USERNAME: <br>
                   <input type="text" name="username" placeholder="Enter Username"><br><br>
@@ -39,7 +39,7 @@
 
             </form>
             <!-- end form -->
-            <p class="text-center">Create By </p>
+            <p class="text-center"> </p>
 
       </div>
       
@@ -57,11 +57,11 @@ if(isset($_POST['submit']))
       $password = md5($_POST['password']);
 
       //2.SQL
-      $sql = "SELECT * FROM admin WHERE Username ='$username' AND Password='$password'";
+      $sql = "SELECT * FROM admin WHERE username ='$username' AND password='$password'";
 
       $res = mysqli_query($conn,$sql);
 
-      //40count rows
+      //4 count rows
       $count = mysqli_num_rows($res);
       if($count==1)
       {

@@ -3,13 +3,13 @@
 <?php // 10 chack whether id is passed or not 
         if(isset($_GET['category_id']))
         {
-            $category_id = $_GET['category_id'];
+            $category_id = $_GET['menu_id'];
             //title based
-            $sql="SELECT title FROM tbl_category WHERE id=$category_id";
+            $sql="SELECT title FROM menu WHERE id=$category_id";
             //query
             $res = mysqli_query($conn,$sql);
             $row = mysqli_fetch_assoc($res);
-            $category_title = $row['titel'];
+            $category_title = $row['title'];
         }
         else{
             header('location:'.SITEURL);

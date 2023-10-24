@@ -22,7 +22,7 @@
                         //get the values
                         $id = $row['MenuID'];
                         $title = $row['title'];
-                        $image_name = $row['imageMenu'];
+                        $image_name = $row['image_name'];
                         ?>
 
                         <a href="category-foods.html">

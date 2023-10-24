@@ -2,11 +2,11 @@
 include('../conn/constant.php');
 
       //1.get to the ID of admin to be delete
-      $id = $_GET['AdminID'];
+      $id = $_GET['id'];
 
 
       //2.create SQL QUERY to delete admin
-      $sql = "DELETE FROM admin WHERE AdminID = $id";
+      $sql = "DELETE FROM admin WHERE id= $id";
 
       //Execute the queryดำเนนิการค้นหา
       $res = mysqli_query($conn, $sql);
