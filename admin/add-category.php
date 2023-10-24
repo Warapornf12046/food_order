@@ -155,7 +155,7 @@
                     //Quesry Executed and Category Added
                     $_SESSION['add'] = "<div class='success'>Category Added Successfully.</div>";
                     //Redirect to Manage Category Page
-                    header('location:'.SITEURL."admin/manage-category.php");
+                    header('location:'.SITEURL."admin/manage-menu.php");
                 }
                 else
                 {
