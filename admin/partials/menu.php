@@ -19,12 +19,12 @@
       <div class="menu text-center">
             <div class="wrapper">
                   <ul>
-                              <li><a href="index.php">Home</a></li>
-                              <li><a href="menage-admin.php">Admin</a></li>
-                              <li><a href="manage-menu.php">MENU</a></li>
-                              <li><a href="manage-food.php">Food</a></li>
-                              <li><a href="manage-order.php">Order</a></li>
-                              <li><a href="logout.php">Logout</a></li>
+                              <li><a href="index.php">HOME</a></li>
+                              <li><a href="menage-admin.php">ADMIN</a></li>
+                              <li><a href="manage-category.php">MENU</a></li>
+                              <li><a href="manage-food.php">FOOD</a></li>
+                              <li><a href="manage-order.php">ORDER</a></li>
+                              <li><a href="logout.php">LOG OUT</a></li>
                               
                   </ul>
             </div>

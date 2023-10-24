@@ -1,7 +1,12 @@
+@font-face {
+    font-family: Anuphan-Regular;
+    src: url(../font/Prompt-SemiBold.woff);
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Anuphan-Regular;
 }
 
 .wrapper {
@@ -48,7 +53,29 @@ table tr td {
 /* ปุ่ม ที่admin*/
 
 .btn-primary {
-    background-color: rgb(204, 184, 223);
+    background-color: #E9B824;
+    padding: 1%;
+    color: aliceblue;
+    text-decoration: none;
+    /*ลบเส้นที่ขีดข้อวาม*/
+    font-weight: bold;
+}
+
+.btn-login {
+    background-color: #557A46;
+    padding: 1%;
+    color: aliceblue;
+    text-decoration: none;
+    /*ลบเส้นที่ขีดข้อวาม*/
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    background-color: #F99417;
+}
+
+.btn-admin {
+    background-color: #FF8787;
     padding: 1%;
     color: aliceblue;
     text-decoration: none;
@@ -60,14 +87,14 @@ table tr td {
 /* วางที่ปุ่มแล้วเเปลี่ยนสี */
 
 .btn-primary:hover {
-    background-color: blanchedalmond;
+    background-color: #557A46;
 }
 
 
 /* ปุ่ม Update Admin*/
 
 .btn-second {
-    background-color: rgb(96, 189, 113);
+    background-color: #557A46;
     padding: 1%;
     color: aliceblue;
     text-decoration: none;
@@ -79,14 +106,14 @@ table tr td {
 /* วางที่ปุ่มแล้วเเปลี่ยนสี */
 
 .btn-second:hover {
-    background-color: blanchedalmond;
+    background-color: #FF9B9B;
 }
 
 
 /* ปุ่ม Delete*/
 
 .btn-delete {
-    background-color: rgb(246, 113, 89);
+    background-color: #C51605;
     padding: 1%;
     color: aliceblue;
     text-decoration: none;
@@ -137,7 +164,7 @@ table tr td {
     text-decoration: none;
     /* เส้นที่ขีดข้าล่างหายไป */
     font-weight: bold;
-    color: rgb(251, 197, 132);
+    color: black;
 }
 
 .menu ul li a:hover {
@@ -150,31 +177,33 @@ table tr td {
 
 .main-content {
     /* margin: 1% 0; */
-    background-color: bisque;
+    background-color: #FFF6F6;
     padding: 3% 0;
 }
 
 .col-4 {
     width: 18%;
-    background-color: rgb(238, 232, 113);
+    background-color: #FFF89A;
     margin: 1%;
     padding: 2%;
     float: left;
+    border: 3px solid #FF8787;
 }
 
 
 /* css footer */
 
 .footer {
-    background-color: rgb(244, 8, 8);
-    color: rgb(240, 230, 217);
+    background-color: #FF8787;
+    color: black;
 }
 
 
 /* login */
 
 .login {
-    border: 1px solid gray;
+    border: 1px solid #1F1717;
+    background-color: #FEFF86;
     width: 20%;
     margin: 10% auto;
     padding: 2%;

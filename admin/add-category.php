@@ -21,9 +21,9 @@
         <br><br>
 
         <!-- Add Category Form Starts-->
-        <from action = "" method= "POST" entype="multipart/form-data">
+        <form action ="" method= "POST" entype="multipart/form-data">
         
-            <table class = "thl-int" > <!--thl-30 -->
+            <table class ="thl-int" > <!--thl-30 -->
                 <tr>
                     <td>Title</td>
                     <td>
@@ -58,7 +58,7 @@
                 </tr>
             </table>
 
-        </from>
+        </form>
         <!-- Add Category Form Ends-->
 
         <?php
@@ -155,7 +155,7 @@
                     //Quesry Executed and Category Added
                     $_SESSION['add'] = "<div class='success'>Category Added Successfully.</div>";
                     //Redirect to Manage Category Page
-                    header('location:'.SITEURL."admin/manage-menu.php");
+                    header('location:'.SITEURL."admin/manage-category.php");
                 }
                 else
                 {

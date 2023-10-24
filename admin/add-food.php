@@ -15,7 +15,7 @@
             ?>
             <form action="" method="POST" enctype="multipart/form-data">
             
-            <table class="tbl-30">
+            <table class="tbl-int">  <!-- tbl-30-->
                 
                 <tr>
                     <td>Title: </td>
@@ -46,14 +46,14 @@
                 </tr>
 
                 <tr>
-                    <td>Category: </td>
+                    <td>Menu: </td>
                     <td>
-                        <select name="category">
+                        <select name="menu_id">
                             
                             <?php
                                 //Create PHP Code to display categories from Database
                                 //1. CReate SQL to get all active categories from database
-                                $sql = "SELECT * FROM tbl_category WHERE active='Yes'";
+                                $sql = "SELECT * FROM menu WHERE active='Yes'";
 
                                 //Executing qUery
                                 $res = mysqli_query($conn, $sql);
@@ -131,7 +131,7 @@
                 $title = $_POST['title'];
                 $description = $_POST['description'];
                 $price = $_POST['price'];
-                $category = $_POST['category'];
+                $menu = $_POST['menu_id'];
 
                 //Check whether radion button for featured and active are checked or not
                 if(isset($_POST['featured']))
@@ -208,12 +208,12 @@
 
                 //Create a SQL Query to Save or Add food
                 // For Numerical we do not need to pass value inside quotes '' But for string value it is compulsory to add quotes
-                $sql2 = "INSERT INTO tbl_food SET
+                $sql2 = "INSERT INTO food SET
                     title = '$title',
                     description = '$description',
                     price = $price,
                     image_name = '$image_name',
-                    category_id = $category,
+                    menu_id = $menu,
                     featured = '$featured',
                     active = '$active'
                 ";

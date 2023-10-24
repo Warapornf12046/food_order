@@ -5,7 +5,7 @@
             
       <div class="main-content">
             <div class="wrapper">
-                  <h1>DASHBOARD</h1> <br><br>
+                  <h1>DASHBOARD</h1>
 
                   <?php 
                         if(isset($_SESSION['login']))

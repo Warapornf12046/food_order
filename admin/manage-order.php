@@ -30,14 +30,7 @@
                             <th>Actions</th>
                         </tr>
 
-                        <tr>
-                            <td>1. </td>
-                            <td>Vijay thapa</td>
-                            <td>vijaythapa</td>
-                            <td>
-                                <a href="=" class="btn-secondary">Update Order</a>
-                            </td>
-                        </tr>
+                        
 
                         <?php 
                             //get all the orders from db
