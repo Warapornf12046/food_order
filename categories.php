@@ -1,66 +1,48 @@
 <?php include('partials-front/menu.php'); ?>
 
-    <!-- CAtegories Section Starts Here -->
-    <section class="categories">
-        <div class="container">
-            <h2 class="text-center">ประเภทอาหาร</h2>
-            <?php 
-                //display all the categories that are active
-                //sql query
-                $sql = "SELECT * FROM menu WHERE active='YES'";
-                
-                //Execute the query
-                $res = mysqli_query($conn,$sql);
+<!-- Categories Section Starts Here -->
+<section class="categories">
+    <div class="container">
+        <h2 class="text-center">ประเภทอาหาร</h2>
 
-                //count rows
-                $count = mysqli_num_rows ($res);
+        <?php 
+        // Display all the categories that are active
+        $sql = "SELECT * FROM menu WHERE active='Yes'";
+        $res = mysqli_query($conn, $sql);
+        $count = mysqli_num_rows($res);
 
-                //check whether categories available or not
-                if ($count > 0) {
-                    //categories available
-                    while( $row = mysqli_fetch_assoc ($res) ) {
-                        //get the values
-                        $id = $row['id'];
-                        $title = $row['title'];
-                        $image_name = $row['image_name'];
-                        ?>
-
-                        <a href="category-foods.html">
-                            <div class="box-3 float-container">
-                                <?php 
-                                    if($image_name=="")
-                                    {
-                                        //Image not available
-                                        echo "<div class='error'>Image not found</div>";
-                                    }
-                                    else
-                                    {
-                                        //Image available
-                                        ?>
-                                        <img src="<?php echo SITEURL; ?>images<?php echo$image_name ?> "alt="กะเพาหมูสับ" class="img-responsive img-curve">
-                                        <?php
-                                    }
-                                ?>
-                                
-                                <h3 class="float-text text-white"><?php echo $title; ?></h3>
-                                                
-                                </div>
-                            </a>
-                        </a>
-                        <?php
-
-                    }
+        if ($count > 0) {
+            // Categories available
+            while ($row = mysqli_fetch_assoc($res)) {
+                $id = $row['id'];
+                $title = $row['title'];
+                $image_name = $row['image_name'];
+        ?>
+        <a href="<?php echo SITEURL; ?>category-foods.php?category_id=<?php echo $id; ?>">
+            <div class="box-3 float-container">
+                <?php 
+                if (!empty($image_name)) {
+                ?>
+                <img src="<?php echo SITEURL; ?>images/<?php echo $image_name; ?>" alt="<?php echo $title; ?>" class="img-responsive img-curve">
+                <?php
+                } else {
+                    echo "<div class='error'>Image not found</div>";
                 }
-                else {
-                    echo "<div class='error'>Category not found</div>";
-                }
+                ?>
+                <h3 class="float-text text-white"><?php echo $title; ?></h3>
+            </div>
+        </a>
+        <?php
+            }
+        } else {
+            // Categories not available
+            echo "<div class='error'>No categories found</div>";
+        }
+        ?>
 
-            ?>
-
-            <div class="clearfix"></div>
-        </div>
-
-    </section>
-    <!-- Categories Section Ends Here -->
+        <div class="clearfix"></div>
+    </div>
+</section>
+<!-- Categories Section Ends Here -->
 
 <?php include('partials-front/footer.php'); ?>
