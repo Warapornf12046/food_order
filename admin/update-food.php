@@ -8,7 +8,7 @@
         $id = $_GET['id'];
         
         //SQL Query to Get the Selected Food
-        $sql2 = "SELECT * FROM tbl_food WHERE id=$id";
+        $sql2 = "SELECT * FROM food WHERE id=$id";
         //execute the Query
         $res2= mysqli_query($conn, $sql2);
 
@@ -98,7 +98,7 @@
 
                         <?php
                             //Query to Get ACtive Categories
-                            $sql = "SELECT * FROM tbl_category WHERE active='Yes'";
+                            $sql = "SELECT * FROM menu WHERE active='Yes'";
                             //Execute the Query
                             $res = mysqli_query($conn, $sql);
                             //Count Rows

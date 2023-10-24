@@ -20,7 +20,7 @@
                     //categories available
                     while( $row = mysqli_fetch_assoc ($res) ) {
                         //get the values
-                        $id = $row['MenuID'];
+                        $id = $row['id'];
                         $title = $row['title'];
                         $image_name = $row['image_name'];
                         ?>

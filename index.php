@@ -40,8 +40,8 @@
                         {
                             //get the values like id, title, image_name
                             $id = $row["id"];
-                            $title = $title['title'];
-                            $image_name = $row['image'];
+                            $title = $row['title'];
+                            $image_name = $row['image_name'];
                             ?>
 
                             <a href="category-foods.html">
@@ -93,7 +93,7 @@
             $count2=mysqli_num_rows($res2);
             if($count2> 0){
                 while ($row=mysqli_fetch_assoc($res2)){
-                    $id=$row["foodID"];
+                    $id=$row["id"];
                     $title=$row["title"];
                     $price=$row["price"];
                     $description=$row["description"];
