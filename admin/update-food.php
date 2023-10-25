@@ -20,7 +20,7 @@
         $description = $row2['description'];
         $price = $row2['price'];
         $current_image = $row2['image_name'];
-        $current_category = $row2['category_id'];
+        $current_category = $row2['id'];
         $featured = $row2['featured'];
         $active = $row2['active'];
 

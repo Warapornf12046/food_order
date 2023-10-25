@@ -28,17 +28,10 @@
             <div class="menu text-right"> <!--- นาทีที่16 วิดีโอที่ 9 -->
                 <ul>
                     <li>
-                        <a href="<?php echo SITEURL; ?>">Home</a>
+                        <a href="<?php echo SITEURL; ?>"></a>
                     </li>
-                    <li>
-                        <a href="<?php echo SITEURL; ?>categories.php">Categories</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo SITEURL; ?>foods.php">Foods</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo SITEURL; ?>">Contact</a>
-                    </li>
+                    
+                    
                 </ul>
             </div>
 

@@ -1,15 +1,6 @@
 <?php include('partials-front/menu.php'); ?>
 
-<!-- 10 fOOD SEARCH Section Starts Here -->
-<section class="food-search text-center">
-    <div class="container">
-        <form action="<?php echo SITEURL; ?>food_search.php" method="POST">
-            <input type="search" name="search" placeholder="Search for Food.." required>
-            <input type="submit" name="submit" value="Search" class="btn btn-primary">
-        </form>
-    </div>
-</section>
-<!-- 10 fOOD SEARCH Section Ends Here -->
+
 
 <?php 
     if(isset($_SESSION['order'])) {
@@ -19,49 +10,7 @@
 ?>
 
 <!-- Home Section -->
-<section class="categories">
-    <div class="container">
-        <h2 class="text-center">ตัวอย่างเมนู / เมนูยอดฮิต</h2>
 
-        <?php 
-            $sql = "SELECT * FROM menu WHERE active='Yes' AND featured ='Yes' LIMIT 3";
-            $res = mysqli_query($conn, $sql);
-            $count = mysqli_num_rows($res);   
-
-            if($count > 0){
-                while($row = mysqli_fetch_array($res))
-                {
-                    $id = $row["id"];
-                    $title = $row['title'];
-                    $image_name = $row['image_name'];
-        ?>
-
-        <a href="<?php echo SITEURL; ?>category-foods.php">
-            <div class="box-3 float-container">
-                <?php 
-                    if($image_name == "") {
-                        echo "<div class='error'>Image not Available</div>";
-                    } else {
-                ?>
-                <img src="<?php echo SITEURL; ?>images/<?php echo $image_name; ?>" alt="<?php echo $title; ?>" class="img-responsive img-curve">
-                <?php
-                    }
-                ?>
-                <h3 class="float-text text-white"><?php echo $title; ?></h3>
-            </div>
-        </a>
-        
-        <?php
-            }
-        } else {
-            echo "<div class='error'>Category not Added.</div>";
-        }
-        ?>
-        
-        <div class="clearfix"></div>
-    </div>
-</section>
-<!-- Categories Section Ends Here -->
 
 <!-- 9 FOOD MENU Section Starts Here -->
 <section class="food-menu">
@@ -97,7 +46,7 @@
                 <p class="food-price"><?php echo $price; ?></p>
                 <p class="food-detail"><?php echo $description; ?></p>
                 <br>
-                <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order Now</a>
+                <!-- <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order Now</a> -->
             </div>
         </div>
 
@@ -109,9 +58,9 @@
         ?>
         
         <div class="clearfix"></div>
-        <p class="text-center">
+        <!-- <p class="text-center">
             <a href="<?php echo SITEURL; ?>category-foods.php">See All Foods</a>
-        </p>
+        </p> -->
     </div>
 </section>
 <!-- 9 FOOD MENU Section Ends Here -->

@@ -68,7 +68,7 @@ if(isset($_POST['submit']))
             //login success
             $_SESSION['login']="<div class='success'>login successfully.</div>";
             $_SESSION['user'] = $username;
-            header('location:'.SITEURL.'admin/');
+            header('location:'.SITEURL.'admin/menage-admin.php');
 
       }
       else

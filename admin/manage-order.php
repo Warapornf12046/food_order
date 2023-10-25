@@ -19,7 +19,7 @@ include('partials/menu.php');
                 <th>Customer Name</th>
                 <th>Total Amount</th>
                 <th>Status</th>
-                <th>Action</th>
+                
             </tr>
 
             <?php
@@ -40,9 +40,7 @@ include('partials/menu.php');
                         <td><?php echo $customer_name; ?></td>
                         <td><?php echo $total_amount; ?></td>
                         <td><?php echo $status; ?></td>
-                        <td>
-                            <a href="<?php echo SITEURL; ?>admin/update-order.php?id=<?php echo $order_id; ?>" class="btn-secondary">Update Order</a>
-                        </td>
+                        
                     </tr>
 
                 <?php

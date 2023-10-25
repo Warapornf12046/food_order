@@ -47,7 +47,7 @@ include('partials/menu.php');
                 <th>Image</th>
                 <th>Featured</th>
                 <th>Active</th>
-                <th>Actions</th>
+                <!-- <th>Actions</th> -->
             </tr>
 
             <?php
@@ -80,10 +80,10 @@ include('partials/menu.php');
                         </td>
                         <td><?php echo $featured; ?></td>
                         <td><?php echo $active; ?></td>
-                        <td>
+                        <!-- <td>
                             <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>" class="btn-second">Update menu</a>
                             <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-delete">Delete menu</a>
-                        </td>
+                        </td> -->
                     </tr>
                     <?php
                 }
