@@ -37,8 +37,6 @@ include('partials/menu.php');
                     <td>
                         <select name="status">
                             <option value="Ordered">Ordered</option>
-                            <option value="On Delivery">On Delivery</option>
-                            <option value="Delivered">Delivered</option>
                             <option value="Cancelled">Cancelled</option>
                         </select>
                     </td>
