@@ -71,7 +71,7 @@ if(isset($_POST['submit']))
             Username = '$username',
             Password = '$password'
 
-      ";
+        ";
 
 
     echo $sql;
